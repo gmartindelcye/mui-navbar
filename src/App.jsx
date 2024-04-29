@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import { green, purple } from "@mui/material/colors";
-import { MuiNavbar } from "./components/MuiNavbar";
+import { GradientNavbar } from "./components/GradientNavbar";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -18,11 +18,13 @@ const theme = createTheme({
   },
 });
 
+const linksArray = ["Products", "Services", "Overview", "Contact Us"];
+
 export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <MuiNavbar />
+        <GradientNavbar links={linksArray} />
       </ThemeProvider>
     </>
   );
