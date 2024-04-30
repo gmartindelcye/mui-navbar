@@ -6,6 +6,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import Register from "./components/Register";
 
 const theme = createTheme({
   palette: {
@@ -25,6 +26,7 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <GradientNavbar links={linksArray} />
+        <Register />
       </ThemeProvider>
     </>
   );
